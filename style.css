@@ -1125,6 +1125,7 @@ p {
 }
 
 .slide--51__content .s3_title {
+  font-size: 250px;
   text-align: center;
 }
 
@@ -1137,7 +1138,7 @@ p {
 }
 
 .slide--51__content .s3_text {
-  font-size: 24px;
+  font-size: 30px;
   text-align: left;
 }
 
@@ -1166,6 +1167,7 @@ p {
   width: 90vw;
   justify-content: center;
   align-items: center;
+  gap:60px;
 }
 
 .slide--59__content {
@@ -1183,12 +1185,12 @@ p {
 .slide--52__content .lcol,
 .slide--53__content .rcol,
 .slide--53__content .lcol,
-/* .slide--54__content .lcol, */
+.slide--54__content .lcol,
 /* .slide--55__content .lcol, */
 .slide--56__content .rcol,
-.slide--56__content .lcol
-/* .slide--58__content .rcol,
-.slide--58__content .lcol  */
+.slide--56__content .lcol,
+/* .slide--58__content .rcol, */
+.slide--58__content .lcol 
 {
   flex: 50% 0;
 }
@@ -1210,6 +1212,7 @@ p {
 
 .slide--57__content .ccol,
 .slide--57__content .ccol img {
+  height: 100%;
   width: 40vw;
 }
 
@@ -1247,6 +1250,7 @@ p {
   display: flex;
   justify-content: end;
   align-items: end;
+  width: fit-content;
 }
 .slide--54__content .rcol,
 .slide--55__content .lcol,
@@ -1279,6 +1283,7 @@ p {
   justify-content: start;
   align-items: start;
 }
+
 .slide--53__content h3 {
   font-size: 60px;
   padding-left: 16px;
