@@ -267,7 +267,7 @@ p {
   width: 100px;
   border-radius: 50%;
   border: solid var(--dark) 4px;
-  background-image: url("./img/note1.svg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/note1.svg");
   background-repeat: no-repeat;
   background-size: 45px;
   background-position: center;
@@ -394,20 +394,20 @@ p {
   height: 100%;
 }
 .intro__img_bl {
-  background-image: url("./img/9.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/9.jpg");
 }
 .intro__img_bl2 {
-  background-image: url("./img/slide_0.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide_0.jpg");
 }
 .intro__img_bl5 {
-  background-image: url("./img/slide-50.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide-50.jpg");
 }
 
 .slide--m0__img {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-image: url("./img/m1bg.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/m1bg.jpg");
   background-position: 30%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -432,7 +432,7 @@ p {
   position: absolute;
   width: 40vw;
   height: 100vh;
-  background-image: url("./img/slide-520.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide-520.jpg");
   background-position: 80% bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -505,13 +505,13 @@ p {
   text-transform: uppercase;
 }
 .slide--m3__content .card-long-link#card-back {
-  background-image: url("./img/back-card.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/back-card.jpg");
 }
 .slide--m3__content .card-long-link#card-team {
-  background-image: url("./img/crew-card.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/crew-card.jpg");
 }
 .slide--m3__content .card-long-link#card-partners {
-  background-image: url("./img/partners-card.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/partners-card.jpg");
   background-position: center;
 }
 
@@ -521,7 +521,7 @@ p {
   left: 0;
   top: 0;
   position: absolute;
-  background-image: url("./img/slide1-4.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide1-4.jpg");
   background-position: 0 0;
   background-size: 90vw auto;
 }
@@ -531,7 +531,7 @@ p {
   position: absolute;
   bottom: 0;
   left: 15%;
-  background-image: url("./img/slide1-4.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide1-4.jpg");
   background-position: 22.5% 100%;
   background-size: 90vw auto;
 }
@@ -542,7 +542,7 @@ p {
   position: absolute;
   left: 41%;
   top: 11%;
-  background-image: url("./img/slide1-4.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide1-4.jpg");
   background-position: 54% 23%;
   background-size: 90vw auto;
 }
@@ -562,7 +562,7 @@ p {
   left: 20%;
   top: 0;
   position: absolute;
-  background-image: url("./img/slide2-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide2-1.jpg");
   background-position: 24.7% 0;
   background-size: 90vw auto;
 }
@@ -573,7 +573,7 @@ p {
   left: 0%;
   top: 22%;
   position: absolute;
-  background-image: url("./img/slide2-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide2-1.jpg");
   background-position: 0 26.4%;
   background-size: 90vw auto;
 }
@@ -584,7 +584,7 @@ p {
   left: 10%;
   top: 50%;
   position: absolute;
-  background-image: url("./img/slide2-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide2-1.jpg");
   background-position: 12.9% 71.4%;
   background-size: 90vw auto;
 }
@@ -595,7 +595,7 @@ p {
   left: 35%;
   top: 20%;
   position: absolute;
-  background-image: url("./img/slide2-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide2-1.jpg");
   background-position: -69.6% -106.6%;
   background-size: 90vw auto;
 }
@@ -606,7 +606,7 @@ p {
   left: 42%;
   bottom: 0%;
   position: absolute;
-  background-image: url("./img/slide2-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide2-1.jpg");
   background-position: -72.5% 100%;
   background-size: 90vw auto;
 }
@@ -617,7 +617,7 @@ p {
   left: 54%;
   top: 18%;
   position: absolute;
-  background-image: url("./img/slide2-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide2-1.jpg");
   background-position: 59.3% 21.2%;
   background-size: 90vw auto;
 }
@@ -628,7 +628,7 @@ p {
   right: 4%;
   top: 44%;
   position: absolute;
-  background-image: url("./img/slide2-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide2-1.jpg");
   background-position: 95.4% 60%;
   background-size: 90vw auto;
 }
@@ -647,7 +647,7 @@ p {
   left: 13%;
   top: 20%;
   position: absolute;
-  background-image: url("./img/slide3-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide3-1.jpg");
   background-position: 32.5% 24.5%;
   background-size: calc(45vw - 10px) auto;
 }
@@ -658,7 +658,7 @@ p {
   right: 12%;
   top: 30%;
   position: absolute;
-  background-image: url("./img/slide3-2.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide3-2.jpg");
   background-position: 62.9% 36.8%;
   background-size: calc(45vw - 10px) auto;
 }
@@ -668,7 +668,7 @@ p {
   right: 14%;
   top: 50%;
   position: absolute;
-  background-image: url("./img/slide3-2.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide3-2.jpg");
   background-position: 56.8% 61.2%;
   background-size: calc(45vw - 10px) auto;
 }
@@ -685,7 +685,7 @@ p {
   right: 40%;
   top: 24%;
   position: absolute;
-  background-image: url("./img/slide4-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide4-1.jpg");
   background-position: 43% 28.6%;
   background-size: 50vw auto;
 }
@@ -695,7 +695,7 @@ p {
   left: 0;
   top: 44%;
   position: absolute;
-  background-image: url("./img/slide4-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide4-1.jpg");
   background-position: 0% 54.6%;
   background-size: 50vw auto;
 }
@@ -705,7 +705,7 @@ p {
   right: 0;
   bottom: 0;
   position: absolute;
-  background-image: url("./img/slide4-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide4-1.jpg");
   background-position: 100% 100%;
   background-size: 50vw auto;
 }
@@ -716,7 +716,7 @@ p {
   left: 4%;
   top: 44%;
   position: absolute;
-  background-image: url("./img/slide5-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide5-1.jpg");
   background-position: 5.4% 66%;
   background-size: 90vw auto;
 }
@@ -726,7 +726,7 @@ p {
   right: 6%;
   top: 5%;
   position: absolute;
-  background-image: url("./img/slide5-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide5-1.jpg");
   background-position: 92.2% 9%;
   background-size: 90vw auto;
 }
@@ -737,7 +737,7 @@ p {
   right: 36%;
   top: 34%;
   position: absolute;
-  background-image: url("./img/slide6-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide6-1.jpg");
   background-position: -77% 51%;
   background-size: 90vw auto;
 }
@@ -747,7 +747,7 @@ p {
   right: 20%;
   top: 5%;
   position: absolute;
-  background-image: url("./img/slide6-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide6-1.jpg");
   background-position: 74% 8%;
   background-size: 90vw auto;
 }
@@ -766,7 +766,7 @@ p {
   left: 30%;
   top: 36%;
   position: absolute;
-  background-image: url("./img/slide7-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide7-1.jpg");
   background-position: -96.9% 44.3%;
   background-size: 50vw auto;
 }
@@ -776,7 +776,7 @@ p {
   right: 28%;
   top: 53%;
   position: absolute;
-  background-image: url("./img/slide7-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide7-1.jpg");
   background-position: 59% 65.1%;
   background-size: 50vw auto;
 }
@@ -795,7 +795,7 @@ p {
   left: 44%;
   top: 7%;
   position: absolute;
-  background-image: url("./img/slide8-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide8-1.jpg");
   background-position: -69.9% 8%;
   background-size: 50vw auto;
 }
@@ -805,7 +805,7 @@ p {
   right: 3%;
   bottom: 6%;
   position: absolute;
-  background-image: url("./img/slide8-1.jpg");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide8-1.jpg");
   background-position: 95.6% 92.9%;
   background-size: 50vw auto;
 }
@@ -869,7 +869,7 @@ p {
   width: 45vw;
 }
 .slide--33__content .lcol {
-  background-image: url("./img/slide_33-1.png");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide_33-1.png");
   background-size: 45vw auto;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -900,7 +900,7 @@ p {
   width: 45vw;
 }
 .slide--34__content .lcol {
-  background-image: url("./img/slide_34-2.png");
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/slide_34-2.png");
   background-size: 45vw auto;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -1745,13 +1745,13 @@ p {
     font-size: 15px;
   }
   .slide--m3__content .card-long-link#card-back {
-    background-image: url("./img/back-sm-card.jpg");
+    background-image: url("https://microcosm.pro/content/images/nuncha/img/back-sm-card.jpg");
   }
   .slide--m3__content .card-long-link#card-team {
-    background-image: url("./img/team-sm-card.jpg");
+    background-image: url("https://microcosm.pro/content/images/nuncha/img/team-sm-card.jpg");
   }
   .slide--m3__content .card-long-link#card-partners {
-    background-image: url("./img/partners-sm-card.jpg");
+    background-image: url("https://microcosm.pro/content/images/nuncha/img/partners-sm-card.jpg");
     background-position: center;
   }
 
@@ -1780,7 +1780,7 @@ p {
   }
 
   .slide--m1__img {
-    background-image: url("./img/slide-521.jpg");
+    background-image: url("https://microcosm.pro/content/images/nuncha/img/slide-521.jpg");
     width: 100vw;
     background-size: cover;
     background-position: bottom;
@@ -1813,7 +1813,7 @@ p {
     flex: 70% 0;
   }
   .intro__img_bl {
-    background-image: url("./img/n-mob.jpg");
+    background-image: url("https://microcosm.pro/content/images/nuncha/img/n-mob.jpg");
   }
   .intro__img_bl2 {
     background-size: cover;
