@@ -222,7 +222,7 @@ gsap.to(
 );
 
 gsap.to(
-  ".slide--m1 .hide-to-left",
+  ".slide--m1 .hide-to-right",
   {
     scrollTrigger: {
       trigger: ".s02",
