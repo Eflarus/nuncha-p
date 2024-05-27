@@ -1600,8 +1600,8 @@ p {
     height: 50svh;
   }
   .slide--57__content .ccol img {
-    height: 100%;
-    width: 100%;
+    height: 50svh;
+    width: 90vw;
   }
 
   .slide--54__content .lcol,

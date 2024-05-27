@@ -755,8 +755,6 @@ gsap.from(
       end: "70% 60%",
       scrub: true,
     },
-    x: "-50vw",
-    y: "-40svh",
     width: 0,
     height: 0,
     opacity: 0,
@@ -1162,6 +1160,7 @@ gsap.from(
     opacity: 0,
     ease: "expo",
   },
+ 
   2
 );
 
@@ -2615,7 +2614,9 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".s10",
       start: "bottom bottom",
+      toggleActions: "play none reverse none",
       end: "bottom center",
+      toggleActions: "play none reverse none",
       scrub: true,
     },
     y: "0vh",
@@ -2625,6 +2626,35 @@ gsap.fromTo(
   {
     scrollTrigger: {
       trigger: ".s10",
+      start: "bottom bottom",
+      toggleActions: "play none reverse none",
+      end: "bottom center",
+      toggleActions: "play none reverse none",
+      scrub: true,
+    },
+    y: "-100vh",
+    opacity: 0,
+    ease: "expo.inOut",
+  },
+  2
+);
+
+gsap.fromTo(
+  ".header",
+  {
+    scrollTrigger: {
+      trigger: ".s50",
+      start: "bottom bottom",
+      end: "bottom center",
+      scrub: true,
+    },
+    y: "0vh",
+    opacity: 1,
+    ease: "expo.inOut",
+  },
+  {
+    scrollTrigger: {
+      trigger: ".s50",
       start: "bottom bottom",
       end: "bottom center",
       scrub: true,
