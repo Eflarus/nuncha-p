@@ -1142,9 +1142,7 @@ p {
   text-align: left;
 }
 
-.slide--51__content .pair-txt p {
-  width: fit-content;
-}
+
 .slide--51__content .pair-txt {
   justify-content: center;
 }
@@ -1354,6 +1352,11 @@ p {
 
 @media all and (max-width: 1500px) and (min-width: 769px) {
 
+  .slide--51__content .s3_title {
+    font-size: 160px;
+    text-align: center;
+  }
+
   .slide--51__content .pair-txt {
     margin-top: 60px;
   }
@@ -1506,6 +1509,10 @@ p {
 }
 
 @media (min-width: 768px) {
+
+  .slide--51__content .pair-txt p {
+    width: fit-content;
+  }
 
   .slide--54__content .quote-c {
     font-size: 100px;
