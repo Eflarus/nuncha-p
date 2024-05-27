@@ -744,7 +744,7 @@ gsap.from(
   2
 );
 
-gsap.from(
+gsap.fromTo(
   ".slide--54 .lcol img",
   {
     scrollTrigger: {
@@ -753,9 +753,21 @@ gsap.from(
       end: "70% 60%",
       scrub: true,
     },
-    width: 0,
-    height: 0,
+    maxWidth: "0vw",
+    maxHeight: "0vh",
     opacity: 0,
+    ease: "expo",
+  },
+  {
+    scrollTrigger: {
+      trigger: ".s54",
+      start: "40% 60%",
+      end: "70% 60%",
+      scrub: true,
+    },
+    maxWidth: "80vw",
+    maxHeight: "80vh",
+    opacity: 1,
     ease: "expo",
   },
   2
@@ -767,7 +779,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".s54",
       scrub: true,
-      start: "80% 70%",
+      start: "70% 70%",
       end: "100% 20%",
       toggleActions: "play none reverse none",
     },
@@ -778,12 +790,12 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".s54",
       scrub: true,
-      start: "70% 70%",
+      start: "80% 70%",
       end: "100% 20%",
       toggleActions: "play none reverse none",
     },
     x: "100vw",
-    ease: "expo.out",
+    ease: "expo",
   },
   2
 );
@@ -799,7 +811,7 @@ gsap.fromTo(
       toggleActions: "play none reverse none",
     },
     x: "0vw",
-    ease: "expo.out",
+    ease: "expo",
   },
   {
     scrollTrigger: {

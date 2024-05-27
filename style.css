@@ -233,6 +233,7 @@ p {
   line-height: 1.5;
 }
 @media all and (max-width: 768px) {
+  
   .header {
     left: 16px;
     top: 36px;
