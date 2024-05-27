@@ -363,7 +363,7 @@ gsap.to(
       scrub: true,
       start: "80% 70%",
       end: "100% 20%",
-      markers:true,
+      // markers:true,
       toggleActions: "play none reverse none",
     },
     opacity: 0,
