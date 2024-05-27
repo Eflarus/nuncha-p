@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Нунча</title>
+  </head>
+  <body>
+    <div id="root" class="container">
+      <div class="colScroll" style="z-index: 100; visibility: hidden">
+        <section class="s01 sc" style="height: 200vh">1</section>
+        <section class="s02 sr">2</section>
+        <section class="s03 sc" style="height: 200vh">3</section>
+        <!-- <section class="s04 sr" style="height: 200vh">4</section> -->
+      </div>
+      <div class="content">
+        <div class="presentation-holder">
+          <div class="presentation">
+            <section class="slide--m0 ovh" style="z-index: 50" id="slide-m0">
+              <header class="header">
+                <a
+                  class="back-arrow nav-btn"
+                  href="https://microcosm.pro/photo"
+                >
+                  <img class="nav-rect" src="./img/arrr.svg" />
+                </a>
+                <a class="hamb-btn nav-btn" onclick="toggleNav()">
+                  <img class="nav-rect" src="./img/hamb.svg" />
+                </a>
+                <div class="intro__nav-wrapper-md smh">
+                  <a class="slide_text" href="./projects.html#project1">
+                    фоторепортаж<br />зарождение
+                  </a>
+                  <a class="slide_text" href="./projects.html#project2">
+                    фотопроект<br />алла сигалова
+                  </a>
+                  <!-- <a class="slide_text" href="./projects.html#project3">
+                    фоторепортаж<br />с лицами
+                  </a> -->
+                </div>
+
+                <div class="intro__nav-wrapper-popup">
+                  <a class="slide_text" href="./projects.html#project1">
+                    фоторепортаж зарождение
+                  </a>
+                  <a class="slide_text" href="./projects.html#project2">
+                    фотопроект алла сигалова
+                  </a>
+                  <!-- <a class="slide_text" href="./projects.html#project3">
+                    фоторепортаж с лицами
+                  </a> -->
+                </div>
+              </header>
+              <div class="slide--m0__img slow-transition"></div>
+              <div class="slide--m0__content slide__content">
+                <h1 class="slide--m0__title mv-to-bottom slow-transition">
+                  Нунча
+                </h1>
+                <h2 class="slide--m0__subtitle hide-to-bottom slow-transition">
+                  спецпроект микрокосма
+                </h2>
+              </div>
+            </section>
+            <section class="slide--m1 ovh" style="z-index: 40" id="slide-m1">
+              <div class="slide--m1__img hide-to-hide slow-transition"></div>
+              <div
+                class="slide--m1__content slide__content slow-transition hide-to-left"
+              >
+                <p class="slide--m1__text1">
+                  Эта мультимедийная страница<br />
+                  посвящена спекталю хореографу и<br />
+                  режиссеру Алле Сигаловой и ее<br />
+                  новому спектаклю “Нунча”
+                </p>
+
+                <p class="slide--m1__text2">
+                  Спецпроект включает в себя две части<br />
+                  фоторепортажа с репетиции и спектакля<br />
+                  в Зарядье, фотопроект с Аллой Сигаловой<br />
+                  и запись отрывков текста
+                </p>
+              </div>
+            </section>
+            <section class="slide--m2 ovh" style="z-index: 30" id="slide-m2">
+              <div class="slide--m2__content slide__content">
+                <a
+                  class="card-link slow-transition hide-to-right sk1"
+                  href="./projects.html#project1"
+                >
+                  <img class="card-img" src="./img/zar-card.jpg" />
+                  <div class="card-info">
+                    <p>фоторепортаж</p>
+                    <p class="card-header">зарождение</p>
+                  </div>
+                </a>
+                <a
+                  class="card-link slow-transition hide-to-right sk2"
+                  href="./projects.html#project2"
+                >
+                  <img class="card-img" src="./img/sigal-card.jpg" />
+                  <div class="card-info">
+                    <p>фотопроект</p>
+                    <p class="card-header">алла сигалова</p>
+                  </div>
+                </a>
+                <a
+                  style="visibility: hidden"
+                  class="card-link slow-transition hide-to-right sk3"
+                  href="./projects.html#project3"
+                >
+                  <img class="card-img" src="./img/zhizn-card.jpg" />
+                  <div class="card-info">
+                    <p>фотопроект</p>
+                    <p class="card-header">вечная жизнь</p>
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section
+              class="slide--m3 ovh"
+              id="slide-m3"
+              style="visibility: hidden"
+            >
+              <div class="slide--m3__content slide__content">
+                <a
+                  class="card-long-link slow-transition hide-to-bottom sk1"
+                  id="card-team"
+                >
+                  <p>команда</p>
+                </a>
+                <a
+                  class="card-long-link slow-transition hide-to-bottom sk2"
+                  id="card-back"
+                  style="visibility: hidden"
+                >
+                  <p>бэкстейдж</p>
+                </a>
+                <a
+                  class="card-long-link slow-transition hide-to-bottom sk3"
+                  id="card-partners"
+                  style="visibility: hidden"
+                >
+                  <p>партнеры</p>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/gsap.min.js"></script>
+    <script src="./scripts/ScrollToPlugin.min.js"></script>
+    <script src="./scripts/ScrollTrigger.min.js"></script>
+    <script src="./scripts/navheader.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
