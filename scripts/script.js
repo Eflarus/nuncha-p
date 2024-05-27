@@ -1128,6 +1128,8 @@ gsap.from(
   2
 );
 
+
+
 gsap.from(
   ".slide--57 .ccol",
   {
@@ -1138,7 +1140,25 @@ gsap.from(
       scrub: true,
     },
     width: 0,
-    flex: "0% 0 0",
+    height: "0svh",
+    // flex: "0% 0 0",
+    opacity: 0,
+    ease: "expo",
+  },
+  2
+);
+
+gsap.from(
+  ".slide--57 .ccol img",
+  {
+    scrollTrigger: {
+      trigger: ".s58",
+      start: "45% 50%",
+      end: "75% 60%",
+      scrub: true,
+    },
+    width: 0,
+    height: 0,
     opacity: 0,
     ease: "expo",
   },
@@ -1220,9 +1240,25 @@ gsap.from(
       end: "70% 60%",
       scrub: true,
     },
-    y: "-50vh",
     x: "-50vw",
     width: 0,
+    opacity: 0,
+    ease: "expo.out",
+  },
+  2
+);
+
+gsap.from(
+  ".slide--58 .lcol img",
+  {
+    scrollTrigger: {
+      trigger: ".s57",
+      start: "40% 60%",
+      end: "70% 60%",
+      scrub: true,
+    },
+    width: 0,
+    height: 0,
     opacity: 0,
     ease: "expo.out",
   },

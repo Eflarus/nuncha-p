@@ -175,7 +175,7 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s01",
       scrub: true,
-      start: "90% 50%",
+      start: "75% 60%",
       end: "100% 50%",
       toggleActions: "play none reverse none",
     },
@@ -245,13 +245,13 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s02",
       scrub: true,
-      start: "90% 50%",
-      end: "100% 50%",
+      start: "75% 60%",
+      end: "100% 10%",
       toggleActions: "play none reverse none",
     },
     opacity: 0,
     y: "-50vh",
-    ease: "expo.in",
+    ease: "ease",
   },
   2
 );
@@ -263,8 +263,8 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s02",
       scrub: true,
-      start: "100% 50%",
-      end: "100% 50%",
+      start: "100% 20%",
+      end: "100% 20%",
       toggleActions: "play none reverse none",
     },
     display: "none",

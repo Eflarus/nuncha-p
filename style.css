@@ -1532,6 +1532,7 @@ p {
   }
   .slide--59__content .s3_text {
     font-size: 16px;
+    max-width: 90vw;
   }
   .slide--58__content .s3_text,
   .slide--58__content .s3_title {
