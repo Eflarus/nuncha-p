@@ -363,11 +363,12 @@ gsap.to(
       scrub: true,
       start: "80% 70%",
       end: "100% 20%",
+      markers:true,
       toggleActions: "play none reverse none",
     },
     opacity: 0,
     y: "-100vh",
-    ease: "expo.out",
+    ease: "expo",
   },
   2
 );
@@ -736,8 +737,8 @@ gsap.from(
       end: "70% 60%",
       scrub: true,
     },
-    x: "-50vw",
-    y: "-40svh",
+    // x: "-50vw",
+    // y: "-40svh",
     width: 0,
     height: 0,
     opacity: 0,
@@ -1384,8 +1385,8 @@ gsap.from(
   {
     scrollTrigger: {
       trigger: ".s59",
-      start: "40% 60%",
-      end: "70% 60%",
+      start: "0% 50%",
+      end: "40% 60%",
       scrub: true,
     },
     y: "20vh",

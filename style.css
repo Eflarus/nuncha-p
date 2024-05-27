@@ -1132,6 +1132,9 @@ p {
   font-size: 40px;
   text-align: center;
 }
+.intro__nav-wrapper .slide_text{
+  text-align: center;
+}
 
 .slide--51__content .s3_text {
   font-size: 24px;
@@ -1594,6 +1597,7 @@ p {
   .slide--57__content .t1 {
     font-size: 20px !important;
   }
+
 
   .slide--57__content .ccol {
     width: 100%;
