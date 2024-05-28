@@ -1399,6 +1399,11 @@ p {
   margin-top: 317px;
 }
 
+.team-card__img{
+  background-color: #000;
+}
+
+
 @media all and (max-width: 1500px) and (min-width: 769px) {
   .b-header {
     text-transform: uppercase;
@@ -1501,6 +1506,43 @@ p {
 
 
 @media all and (min-width: 1101px) {
+
+  .team-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    gap: 20px;
+    width: 1069px;
+    margin: auto;
+  }
+  
+  .team-card__role{
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  .team-card__name{
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  .team-card{
+    width: calc(1029px / 3);
+    margin-bottom: 65px;
+    margin-top: 65px;
+  }
+
+  .team-card__img{
+    width: calc(1029px / 3);
+  }
+
+
+
+
   .b-header {
     margin-top: 220px;
   }
@@ -1626,6 +1668,43 @@ p {
 }
 
 @media all and (min-width: 1530px) {
+
+  .team-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    gap: 20px;
+    width: 1528px;
+    margin: auto;
+  }
+  
+  .team-card__role{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  .team-card__name{
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  .team-card{
+    margin-bottom: 85px;
+    margin-top: 85px;
+    width: calc(1488px / 3);
+  }
+  .team-card__img{
+    width: calc(1488px / 3);
+  }
+
+
+  
+
+
   .mdkh {
     display: none;
   }
@@ -1749,6 +1828,44 @@ p {
 
 
 @media all and (max-width: 1100px) {
+
+  .team-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    gap: 15px;
+    width: 333px;
+    margin: auto;
+  }
+  
+  .team-card__role{
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-size: 6px;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  .team-card__name{
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  .team-card{
+    width: calc(318px / 2);
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .team-card__img{
+    width: calc(318px / 2);
+  }
+
+
+
+
+
   .smkh {
     display: none;
   }
@@ -1960,8 +2077,8 @@ p {
   .b-header {
     text-transform: uppercase;
     font-size: 36px;
-    margin-left: 10vw;
-    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-top: 122px;
     margin-bottom: 60px;
   }
 
