@@ -240,6 +240,11 @@ p {
   line-height: 1.5;
 }
 @media all and (max-width: 768px) {
+  
+  .slide--316__content h3{
+    width: 90vw;
+  }
+
   .header {
     left: 16px;
     top: 36px;
@@ -1082,7 +1087,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   height: 80vh;
   width: 80vw;
@@ -2707,10 +2712,10 @@ p {
     max-height: 25vh;
   }
   .slide--314__content h2 {
-    font-size: 36px;
+    font-size: 32px;
     rotate: -90deg;
-    width: 0vh;
-    margin-top: 76vh;
+    width: 36px;
+    margin-top: 71svh;
   }
   .slide--314__content {
     flex-direction: row;
