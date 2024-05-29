@@ -26,7 +26,7 @@ gsap.from(
       onLeave: () => {
         setTimeout(() => {
           console.log("onLeaveLink");
-          window.scrollTo(0, 1);
+          window.scrollTo( {top:0, behavior: 'instant',});
           window.location.href = "./project.html";
         }, 500);
       },
