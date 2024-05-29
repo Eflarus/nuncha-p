@@ -1117,9 +1117,7 @@ p {
   gap: 140px;
 }
 
-.slide--36 .pair-txt p{
-  width:fit-content;
-}
+
 
 .slide--318__content {
   display: flex;
@@ -1919,6 +1917,10 @@ p {
 
 @media all and (max-width: 1100px) {
 
+  .b-fix-sm{
+    margin-left: calc(50vw - 161px) !important;
+  }
+
   .p-img2{
     order: 2;
   }
@@ -1927,17 +1929,17 @@ p {
   }
 
   .p-desc{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .p-card{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     align-items: start;
     justify-content: center;
+    margin-bottom: 70px;
   }
-
 
   .p-group{
     display: flex;
@@ -1945,20 +1947,20 @@ p {
     justify-content: space-between;
     align-items: top;
     gap: 25px;
-    width: 252px;
+    width: 322px;
     margin: auto;
     margin-bottom: 15svh;
   }
   .p-group img, .p-group .p-card{
-    width: 252px;
+    width: 322px;
   }
 
   .p-group img{
-    margin-top:80px;
+    margin-top:10px;
   }
 
   .p-group .p-name{
-    font-size: 32px;
+    font-size: 24px;
     text-transform: uppercase;
     line-height: 0.9;
   }
