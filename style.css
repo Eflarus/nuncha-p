@@ -240,7 +240,7 @@ p {
   line-height: 1.5;
 }
 @media all and (max-width: 768px) {
-  
+
   .slide--316__content h3{
     width: 90vw;
   }
@@ -1117,6 +1117,10 @@ p {
   gap: 140px;
 }
 
+.slide--36 .pair-txt p{
+  width:fit-content;
+}
+
 .slide--318__content {
   display: flex;
   flex-direction: column;
@@ -1410,6 +1414,11 @@ p {
 
 .team-card__img{
   background-color: #000;
+}
+
+.slide--36 .pair-txt{
+  justify-content: space-around;
+  margin: auto;
 }
 
 @media all and (max-width: 1500px) and (min-width: 769px) {

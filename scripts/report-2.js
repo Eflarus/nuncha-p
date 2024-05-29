@@ -775,7 +775,7 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
-  ".slide--36 .pair-txt",
+  ".slide--36 .pair-txt p",
   {
     scrollTrigger: {
       trigger: ".s16",
@@ -795,11 +795,30 @@ gsap.fromTo(
       toggleActions: "play none reverse none",
       scrub: true,
     },
-    transform: "scale(0.8)",
+    transform: "scale(0.7)",
     ease: "expo",
   },
   2
 );
+
+
+gsap.to(
+  ".slide--36 .pair-txt",
+  {
+    scrollTrigger: {
+      trigger: ".s16",
+      start: "50% 50%",
+      end: "80% 60%",
+      toggleActions: "play none reverse none",
+      scrub: true,
+    },
+    width: "80vw",
+    ease: "expo",
+  },
+  2
+);
+
+
 
 gsap.fromTo(
   ".slide--36 .slide--36__img1",
