@@ -1935,6 +1935,13 @@ p {
     order: 3;
   }
 
+  .p-img3{
+    order:4;
+  }
+  .p-card3{
+    order: 5;
+  }
+
   .p-desc{
     font-size: 16px;
   }
