@@ -1722,6 +1722,13 @@ p {
 
 @media all and (min-width: 1530px) {
 
+  .p-card2 .p-name {
+    font-size: 96px !important;
+  }
+  .p-card3 .p-name {
+    font-size: 128px !important;
+  }
+
   .p-desc{
     font-size: 36px;
   }
