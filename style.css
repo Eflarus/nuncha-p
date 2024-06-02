@@ -1415,7 +1415,7 @@ p {
 }
 
 .slide--36 .pair-txt{
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
 }
 
@@ -2196,6 +2196,19 @@ p {
 }
 
 @media (min-width: 768px) {
+  .slide--36__img1{
+    width: 1145px;
+    margin: 0 auto;
+    max-width: initial;
+  }
+  .slide--36__content .pair-txt {
+    width: 1145px;
+    margin: 0 auto;
+  }  
+  .slide--36__content .pair-txt p {
+    font-size: 24px;
+  }
+
   .slide--51__content .pair-txt p {
     width: fit-content;
   }
@@ -2224,6 +2237,10 @@ p {
 }
 
 @media all and (max-width: 768px) {
+  .slide--313__content,
+  .slide--315__content{
+    width: 94vw;
+  }
 
   .slide--500 .slide--500__img_link{
     background-image: url("https://microcosm.pro/content/images/nuncha/img/per1.jpg");

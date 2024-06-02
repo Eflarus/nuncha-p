@@ -453,7 +453,7 @@ gsap.fromTo(
       trigger: ".s13",
       scrub: true,
       start: "0% 50%",
-      end: "50% 60%",
+      end: "40% 70%",
       toggleActions: "play none reverse none",
     },
     opacity: 0,
@@ -464,7 +464,7 @@ gsap.fromTo(
       trigger: ".s13",
       scrub: true,
       start: "0% 50%",
-      end: "50% 60%",
+      end: "40% 70%",
       toggleActions: "play none reverse none",
     },
     opacity: 1,
@@ -479,14 +479,14 @@ gsap.from(
     scrollTrigger: {
       trigger: ".s13",
       scrub: true,
-      start: "50% 50%",
-      end: "80% 60%",
+      start: "40% 80%",
+      end: "80% 50%",
       toggleActions: "play none reverse none",
     },
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
-  2
+  4
 );
 
 gsap.from(
@@ -496,7 +496,7 @@ gsap.from(
       trigger: ".s13",
       scrub: true,
       start: "0% 50%",
-      end: "50% 60%",
+      end: "40% 60%",
       toggleActions: "play none reverse none",
     },
     x: "50vw",
@@ -511,7 +511,7 @@ gsap.from(
     scrollTrigger: {
       trigger: ".s13",
       scrub: true,
-      start: "50% 50%",
+      start: "40% 50%",
       end: "80% 60%",
       toggleActions: "play none reverse none",
     },
@@ -595,7 +595,7 @@ gsap.fromTo(
       toggleActions: "play none reverse none",
     },
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -757,6 +757,8 @@ gsap.fromTo(
     },
     opacity: 0,
     y: "100vh",
+    marginTop: "10px",
+    marginBottom: "10px",
     ease: "expo",
   },
   {
@@ -768,6 +770,8 @@ gsap.fromTo(
       scrub: true,
     },
     opacity: 1,
+    marginTop: "10px",
+    marginBottom: "10px",
     y: "0vh",
     ease: "expo",
   },
@@ -784,6 +788,8 @@ gsap.fromTo(
       toggleActions: "play none reverse none",
       scrub: true,
     },
+    marginTop: "10px",
+    marginBottom: "10px",
     transform: "scale(1)",
     ease: "expo",
   },
@@ -795,30 +801,29 @@ gsap.fromTo(
       toggleActions: "play none reverse none",
       scrub: true,
     },
-    transform: "scale(0.7)",
+    marginTop: "0px",
+    marginBottom: "0px",
+    transform: "scale(0.8)",
     ease: "expo",
   },
   2
 );
 
-
-gsap.to(
-  ".slide--36 .pair-txt",
-  {
-    scrollTrigger: {
-      trigger: ".s16",
-      start: "50% 50%",
-      end: "80% 60%",
-      toggleActions: "play none reverse none",
-      scrub: true,
-    },
-    width: "80vw",
-    ease: "expo",
-  },
-  2
-);
-
-
+// gsap.to(
+//   ".slide--36 .pair-txt",
+//   {
+//     scrollTrigger: {
+//       trigger: ".s16",
+//       start: "50% 50%",
+//       end: "80% 60%",
+//       toggleActions: "play none reverse none",
+//       scrub: true,
+//     },
+//     width: "80vw",
+//     ease: "expo",
+//   },
+//   2
+// );
 
 gsap.fromTo(
   ".slide--36 .slide--36__img1",
@@ -831,7 +836,7 @@ gsap.fromTo(
     },
     opacity: 0,
     maxHeight: "0vh",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -842,7 +847,7 @@ gsap.fromTo(
     },
     opacity: 1,
     maxHeight: "90vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1250,6 +1255,31 @@ gsap.from(
   2
 );
 
+gsap.fromTo(
+  ".slide--310 .col-sm",
+  {
+    scrollTrigger: {
+      trigger: ".s20",
+      start: "50% 50%",
+      end: "80% 60%",
+      scrub: true,
+    },
+    width: "65vw",
+    ease: "expo",
+  },
+  {
+    scrollTrigger: {
+      trigger: ".s20",
+      start: "50% 50%",
+      end: "80% 60%",
+      scrub: true,
+    },
+    width: "60vw",
+    ease: "expo",
+  },
+  2
+);
+
 gsap.to(
   ".slide--310",
   {
@@ -1335,8 +1365,9 @@ gsap.from(
   {
     scrollTrigger: {
       trigger: ".s22",
-      start: "top bottom",
-      end: "top bottom",
+      start: "10% 80%",
+      end: "20% 90%",
+      toggleActions: "play none reverse none",
       scrub: true,
     },
     opacity: 0,
@@ -1351,8 +1382,9 @@ gsap.fromTo(
   {
     scrollTrigger: {
       trigger: ".s22",
-      start: "0% 100%",
+      start: "0% 120%",
       end: "10% 80%",
+      toggleActions: "play none reverse none",
       scrub: true,
     },
     opacity: 0,
@@ -1384,9 +1416,10 @@ gsap.fromTo(
   {
     scrollTrigger: {
       trigger: ".s22",
-      start: "0% 100%",
+      start: "0% 120%",
       end: "10% 80%",
       scrub: true,
+      toggleActions: "play none reverse none",
     },
     opacity: 0,
     transform: "scale(1) ",
@@ -1425,7 +1458,7 @@ gsap.fromTo(
     x: "0vw",
     y: "0%",
     transform: "scale(1) ",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -1437,8 +1470,8 @@ gsap.fromTo(
     },
     x: "50vw",
     y: "-250%",
-    transform: "scale(3) ",
-    ease: "expo",
+    transform: "scale(2) ",
+    ease: "ease",
   },
   2
 );
@@ -1456,8 +1489,8 @@ gsap.fromTo(
     },
     x: "50vw",
     y: "-250%",
-    transform: "scale(3) ",
-    ease: "expo",
+    transform: "scale(2) ",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -1470,8 +1503,7 @@ gsap.fromTo(
     x: "10vw",
     y: "-50%",
     transform: "scale(4)",
-    ease: "expo",
-    duration: 2,
+    ease: "ease",
   },
   2
 );
@@ -1483,15 +1515,14 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".s22",
       start: "20% 61%",
-      end: "30% 41%",
+      end: "30% 40%",
       scrub: true,
       toggleActions: "play none reverse none",
     },
     x: "10vw",
     y: "-50%",
-    transform: "scale(4)",
-    ease: "expo",
-    duration: 2,
+    transform: "scale(4) rotateY(0deg)",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -1504,8 +1535,7 @@ gsap.fromTo(
     x: "60vw",
     y: "-25%",
     transform: "scale(6) rotateY(180deg)",
-    ease: "expo",
-    duration: 2,
+    ease: "ease",
   },
   2
 );
@@ -1524,8 +1554,7 @@ gsap.fromTo(
     x: "60vw",
     y: "-25%",
     transform: "scale(6) rotateY(180deg)",
-    ease: "expo",
-    duration: 2,
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -1538,8 +1567,7 @@ gsap.fromTo(
     x: "50vw",
     y: "20%",
     transform: "rotateY(180deg) scale(10)",
-    ease: "expo",
-    duration: 2,
+    ease: "ease",
   },
   2
 );
@@ -1558,7 +1586,7 @@ gsap.fromTo(
     x: "50vw",
     y: "20%",
     transform: "rotateY(180deg) scale(10)",
-    ease: "expo",
+    ease: "power4.in",
     duration: 2,
   },
   {
@@ -1572,7 +1600,7 @@ gsap.fromTo(
     x: "140vw",
     y: "-1200%",
     transform: "rotateY(180deg) scale(64,200)",
-    ease: "expo",
+    ease: "power4.in",
     duration: 2,
   },
   2
@@ -1586,13 +1614,12 @@ gsap.fromTo(
       trigger: ".s22",
       start: "0% 100%",
       end: "10% 80%",
-
       scrub: true,
       toggleActions: "play none reverse none",
     },
 
-    ease: "expo",
-    transform: "scale(1) ",
+    ease: "ease",
+    transform: "scale(1) rotateY(0deg)",
     x: "0vw",
     y: "0%",
   },
@@ -1601,14 +1628,13 @@ gsap.fromTo(
       trigger: ".s22",
       start: "10% 80%",
       end: "20% 60%",
-
       scrub: true,
       toggleActions: "play none reverse none",
     },
     x: "-50vw",
     y: "-150%",
     transform: "scale(2) rotateY(180deg)",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1628,21 +1654,20 @@ gsap.fromTo(
     x: "-50vw",
     y: "-150%",
     transform: "scale(2) rotateY(180deg)",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
       trigger: ".s22",
       start: "20% 60%",
       end: "30% 40%",
-
       scrub: true,
       toggleActions: "play none reverse none",
     },
     x: "-10vw",
     y: "-250%",
-    transform: "scale(3)",
-    ease: "expo",
+    transform: "scale(3) rotateY(0deg)",
+    ease: "ease",
   },
   2
 );
@@ -1661,8 +1686,8 @@ gsap.fromTo(
     },
     x: "-10vw",
     y: "-250%",
-    transform: "scale(3)",
-    ease: "expo",
+    transform: "scale(3) rotateY(0deg)",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -1677,7 +1702,7 @@ gsap.fromTo(
     y: "-25%",
     zIndex: -1,
     transform: "scale(6) rotateY(180deg)",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1698,7 +1723,7 @@ gsap.fromTo(
     y: "-25%",
     zIndex: -1,
     transform: "scale(6) rotateY(180deg)",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -1712,8 +1737,8 @@ gsap.fromTo(
     x: "50vw",
     y: "20%",
     zIndex: -1,
-    transform: " rotateY(180deg) scale(10)",
-    ease: "expo",
+    transform: "scale(10) rotateY(180deg) ",
+    ease: "ease",
   },
   2
 );
@@ -1729,7 +1754,7 @@ gsap.fromTo(
       toggleActions: "play none reverse none",
     },
     opacity: 1,
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -1740,7 +1765,7 @@ gsap.fromTo(
       toggleActions: "play none reverse none",
     },
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1756,7 +1781,7 @@ gsap.to(
       toggleActions: "play none reverse none",
     },
     display: "none",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
