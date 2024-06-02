@@ -1848,10 +1848,10 @@ gsap.from(
       end: "50% 60%",
       toggleActions: "play none reverse none",
     },
-    width: "0vw",
-    x: "100vh",
+    maxWidth: "0vw",
+    // x: "100vh",
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
