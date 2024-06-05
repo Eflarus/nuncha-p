@@ -251,7 +251,7 @@ gsap.fromTo(
     },
     y: "-20vh",
     opacity: 1,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -280,7 +280,7 @@ gsap.fromTo(
     },
     transform: "scale(0.6)",
     y: "0vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -297,7 +297,7 @@ gsap.from(
     },
     opacity: 0,
     y: "-100vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -307,14 +307,14 @@ gsap.to(
   {
     scrollTrigger: {
       trigger: ".s11",
-      start: "80% 70%",
+      start: "80% 60%",
       end: "100% 20%",
       scrub: true,
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
     opacity: 0,
-    ease: "expo.out",
+    ease: "ease",
   },
   2
 );
@@ -378,7 +378,7 @@ gsap.fromTo(
     },
     y: "-30vw",
     transform: "scale(1)",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -390,7 +390,7 @@ gsap.fromTo(
     },
     transform: "scale(0.6)",
     y: "0vw",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -407,7 +407,7 @@ gsap.from(
     },
     opacity: 0,
     y: "-50vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -534,7 +534,7 @@ gsap.to(
     },
     opacity: 0,
     y: "-100vh",
-    ease: "expo.out",
+    ease: "ease",
   },
   2
 );
@@ -612,7 +612,7 @@ gsap.to(
     },
     opacity: 0,
     y: "-100vh",
-    ease: "expo.out",
+    ease: "ease",
   },
   2
 );
@@ -676,7 +676,7 @@ gsap.fromTo(
     },
     y: "-20vh",
     transform: "scale(1)",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -688,7 +688,7 @@ gsap.fromTo(
     },
     y: "0vh",
     transform: "scale(0.6)",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -705,7 +705,7 @@ gsap.from(
     },
     opacity: 0,
     y: "-100vw",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -722,7 +722,7 @@ gsap.to(
     },
     y: "-100vw",
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -791,7 +791,7 @@ gsap.fromTo(
     marginTop: "10px",
     marginBottom: "10px",
     transform: "scale(1)",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -804,26 +804,10 @@ gsap.fromTo(
     marginTop: "0px",
     marginBottom: "0px",
     transform: "scale(0.8)",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
-
-// gsap.to(
-//   ".slide--36 .pair-txt",
-//   {
-//     scrollTrigger: {
-//       trigger: ".s16",
-//       start: "50% 50%",
-//       end: "80% 60%",
-//       toggleActions: "play none reverse none",
-//       scrub: true,
-//     },
-//     width: "80vw",
-//     ease: "expo",
-//   },
-//   2
-// );
 
 gsap.fromTo(
   ".slide--36 .slide--36__img1",
@@ -863,7 +847,7 @@ gsap.to(
     },
     opacity: 0,
     y: "-100vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -999,7 +983,7 @@ gsap.to(
     },
     y: "-100vh",
     opacity: 0,
-    ease: "expo.out",
+    ease: "ease",
   },
   2
 );
@@ -1061,7 +1045,7 @@ gsap.from(
     opacity: 0,
     maxHeight: "0vh",
     y: "100vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1077,7 +1061,7 @@ gsap.to(
     },
     y: "-100vh",
     opacity: 0,
-    ease: "expo.out",
+    ease: "ease",
   },
   2
 );
@@ -1170,7 +1154,7 @@ gsap.from(
     },
     opacity: 0,
     y: "-50vw",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1186,7 +1170,7 @@ gsap.to(
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
-    ease: "expo.out",
+    ease: "ease",
   },
   2
 );
@@ -1291,7 +1275,8 @@ gsap.to(
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
-    ease: "expo.out",
+    opacity: 0,
+    ease: "ease",
   },
   2
 );
@@ -1324,7 +1309,7 @@ gsap.from(
       scrub: true,
     },
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1339,7 +1324,7 @@ gsap.to(
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -1388,7 +1373,7 @@ gsap.fromTo(
       scrub: true,
     },
     opacity: 0,
-    transform: "scale(1)",
+    transform: "scale(1) rotateY(0deg)",
     y: "100%",
     x: "100vw",
     ease: "expo",
@@ -1404,9 +1389,10 @@ gsap.fromTo(
     },
     opacity: 1,
     ease: "expo",
-    transform: "scale(1)",
+    transform: "scale(1) rotateY(0deg)",
     x: "0vw",
     y: "0%",
+    // clearProps: "all"
   },
   2
 );
@@ -1622,6 +1608,7 @@ gsap.fromTo(
     transform: "scale(1) rotateY(0deg)",
     x: "0vw",
     y: "0%",
+    // clearProps: "all"
   },
   {
     scrollTrigger: {
@@ -1635,6 +1622,7 @@ gsap.fromTo(
     y: "-150%",
     transform: "scale(2) rotateY(180deg)",
     ease: "ease",
+    // clearProps: "all"
   },
   2
 );
@@ -1655,6 +1643,7 @@ gsap.fromTo(
     y: "-150%",
     transform: "scale(2) rotateY(180deg)",
     ease: "ease",
+    // clearProps: "all"
   },
   {
     scrollTrigger: {
@@ -1668,6 +1657,7 @@ gsap.fromTo(
     y: "-250%",
     transform: "scale(3) rotateY(0deg)",
     ease: "ease",
+    // clearProps: "all"
   },
   2
 );
@@ -1688,6 +1678,7 @@ gsap.fromTo(
     y: "-250%",
     transform: "scale(3) rotateY(0deg)",
     ease: "ease",
+    // clearProps: "all"
   },
   {
     scrollTrigger: {
@@ -1703,7 +1694,9 @@ gsap.fromTo(
     zIndex: -1,
     transform: "scale(6) rotateY(180deg)",
     ease: "ease",
+    // clearProps: "all"
   },
+
   2
 );
 
@@ -1724,6 +1717,7 @@ gsap.fromTo(
     zIndex: -1,
     transform: "scale(6) rotateY(180deg)",
     ease: "ease",
+    // clearProps: "all"
   },
   {
     scrollTrigger: {
@@ -1809,8 +1803,8 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s231",
       scrub: true,
-      start: "80% 70%",
-      end: "100% 20%",
+      start: "50% 60%",
+      end: "100% 50%",
       toggleActions: "play none reverse none",
     },
     x: "-100vw",
@@ -1862,13 +1856,13 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s23",
       scrub: true,
-      start: "80% 70%",
+      start: "50% 70%",
       end: "100% 20%",
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
     opacity: 0,
-    ease: "expo.out",
+    ease: "ease",
   },
   2
 );
@@ -1951,8 +1945,8 @@ gsap.from(
     scrollTrigger: {
       trigger: ".s24",
       scrub: true,
-      start: "center 60%",
-      end: "center 30%",
+      start: "50% 60%",
+      end: "50 30%",
       toggleActions: "play none reverse none",
     },
     y: "50vh",
@@ -1968,13 +1962,13 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s24",
       scrub: true,
-      start: "80% 70%",
+      start: "50% 30%",
       end: "100% 20%",
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -2035,12 +2029,12 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s25",
       scrub: true,
-      start: "80% 70%",
+      start: "80% 60%",
       end: "100% 20%",
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -2084,13 +2078,13 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s26",
       scrub: true,
-      start: "80% 70%",
+      start: "70% 70%",
       end: "100% 20%",
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -2155,7 +2149,7 @@ gsap.fromTo(
     },
     y: "0vh",
     transform: "scale(1.3)",
-    ease: "expo",
+    ease: "ease",
   },
   {
     scrollTrigger: {
@@ -2167,7 +2161,7 @@ gsap.fromTo(
     },
     transform: "scale(1)",
     y: "0vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -2195,12 +2189,12 @@ gsap.to(
     scrollTrigger: {
       trigger: ".s27",
       scrub: true,
-      start: "80% 70%",
+      start: "80% 60%",
       end: "100% 20%",
       toggleActions: "play none reverse none",
     },
     y: "-100vh",
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -2227,12 +2221,12 @@ gsap.from(
   {
     scrollTrigger: {
       trigger: ".s28",
-      start: "0% 50%",
+      start: "10% 50%",
       end: "50% 60%",
       scrub: true,
     },
     opacity: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
@@ -2243,12 +2237,12 @@ gsap.from(
     scrollTrigger: {
       trigger: ".s28",
       start: "50% 50%",
-      end: "80% 60%",
+      end: "90% 60%",
       scrub: true,
     },
     opacity: 0,
     height: 0,
-    ease: "expo",
+    ease: "ease",
   },
   2
 );
