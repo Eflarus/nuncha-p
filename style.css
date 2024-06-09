@@ -275,24 +275,24 @@ p {
 
 .sound_button {
   display: block;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   border: solid var(--dark) 4px;
   background-image: url("https://microcosm.pro/content/images/nuncha/img/note1.svg");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 30px;
   background-position: center;
 }
 
 .sound_restart{
   display: block;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   border: solid var(--dark) 4px;
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 30px;
   background-position: center;
 }
 
@@ -959,7 +959,7 @@ p {
 
 .slide--37__content {
   flex-direction: row;
-  height: 90vh;
+  height: 80vh;
 }
 .slide--37 {
   justify-content: center;
@@ -2764,7 +2764,7 @@ p {
   }
 
   .slide--37__content img {
-    max-height: 40vh;
+    max-height: 35vh;
     margin: 0 auto;
   }
   .slide--37__content p {

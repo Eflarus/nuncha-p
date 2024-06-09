@@ -214,87 +214,87 @@ const restartPoem = () => {
 
 
 // S14 MADONNA
-gsap.to(".slide--34", {
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".s14",
-    scrub: true,
-    start: "top center",
-    end: "center top",
-    onEnter: () => {
-      console.log("onEnter");
-      playMadonna();
-    },
-    onLeaveBack: () => {
-      console.log("onLeaveBack");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.MADONNA.volume > 0.1) {
-          SOUNDS.MADONNA.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.MADONNA.pause();
-        }
-      }, 100);
-    },
-    onLeave: () => {
-      console.log("onLeave");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.MADONNA.volume > 0.1) {
-          SOUNDS.MADONNA.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.MADONNA.pause();
-        }
-      }, 100);
-    },
-    onEnterBack: () => {
-      console.log("onEnterBack");
-      playMadonna();
-    },
-  },
-});
+// gsap.to(".slide--34", {
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".s14",
+//     scrub: true,
+//     start: "top center",
+//     end: "center top",
+//     onEnter: () => {
+//       console.log("onEnter");
+//       playMadonna();
+//     },
+//     onLeaveBack: () => {
+//       console.log("onLeaveBack");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.MADONNA.volume > 0.1) {
+//           SOUNDS.MADONNA.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.MADONNA.pause();
+//         }
+//       }, 100);
+//     },
+//     onLeave: () => {
+//       console.log("onLeave");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.MADONNA.volume > 0.1) {
+//           SOUNDS.MADONNA.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.MADONNA.pause();
+//         }
+//       }, 100);
+//     },
+//     onEnterBack: () => {
+//       console.log("onEnterBack");
+//       playMadonna();
+//     },
+//   },
+// });
 
 
 // S15 LIFE
-gsap.to(".slide--35", {
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".s15",
-    scrub: true,
-    start: "top center",
-    end: "bottom top",
-    onEnter: () => {
-      console.log("onEnter");
-      playLife();
-    },
-    onLeaveBack: () => {
-      console.log("onLeaveBack");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.LIFE.volume > 0.1) {
-          SOUNDS.LIFE.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.LIFE.pause();
-        }
-      }, 100);
-    },
-    onLeave: () => {
-      console.log("onLeave");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.LIFE.volume > 0.1) {
-          SOUNDS.LIFE.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.LIFE.pause();
-        }
-      }, 100);
-    },
-    onEnterBack: () => {
-      console.log("onEnterBack");
-      playLife();
-    },
-  },
-});
+// gsap.to(".slide--35", {
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".s15",
+//     scrub: true,
+//     start: "top center",
+//     end: "bottom top",
+//     onEnter: () => {
+//       console.log("onEnter");
+//       playLife();
+//     },
+//     onLeaveBack: () => {
+//       console.log("onLeaveBack");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.LIFE.volume > 0.1) {
+//           SOUNDS.LIFE.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.LIFE.pause();
+//         }
+//       }, 100);
+//     },
+//     onLeave: () => {
+//       console.log("onLeave");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.LIFE.volume > 0.1) {
+//           SOUNDS.LIFE.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.LIFE.pause();
+//         }
+//       }, 100);
+//     },
+//     onEnterBack: () => {
+//       console.log("onEnterBack");
+//       playLife();
+//     },
+//   },
+// });
 
 
 // S17 POEM
@@ -339,87 +339,87 @@ gsap.to(".slide--37", {
 });
 
 // S20 HEART
-gsap.to(".slide--310", {
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".s20",
-    scrub: true,
-    start: "top center",
-    end: "bottom top",
-    onEnter: () => {
-      console.log("onEnter");
-      playHeart();
-    },
-    onLeaveBack: () => {
-      console.log("onLeaveBack");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.HEART.volume > 0.1) {
-          SOUNDS.HEART.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.HEART.pause();
-        }
-      }, 100);
-    },
-    onLeave: () => {
-      console.log("onLeave");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.HEART.volume > 0.1) {
-          SOUNDS.HEART.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.HEART.pause();
-        }
-      }, 100);
-    },
-    onEnterBack: () => {
-      console.log("onEnterBack");
-      playHeart();
-    },
-  },
-});
+// gsap.to(".slide--310", {
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".s20",
+//     scrub: true,
+//     start: "top center",
+//     end: "bottom top",
+//     onEnter: () => {
+//       console.log("onEnter");
+//       playHeart();
+//     },
+//     onLeaveBack: () => {
+//       console.log("onLeaveBack");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.HEART.volume > 0.1) {
+//           SOUNDS.HEART.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.HEART.pause();
+//         }
+//       }, 100);
+//     },
+//     onLeave: () => {
+//       console.log("onLeave");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.HEART.volume > 0.1) {
+//           SOUNDS.HEART.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.HEART.pause();
+//         }
+//       }, 100);
+//     },
+//     onEnterBack: () => {
+//       console.log("onEnterBack");
+//       playHeart();
+//     },
+//   },
+// });
 
 
 // S24 CHILD
-gsap.to(".slide--314", {
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".s24",
-    scrub: true,
-    start: "top center",
-    end: "bottom top",
-    onEnter: () => {
-      console.log("onEnter");
-      playChild();
-    },
-    onLeaveBack: () => {
-      console.log("onLeaveBack");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.CHILD.volume > 0.1) {
-          SOUNDS.CHILD.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.CHILD.pause();
-        }
-      }, 100);
-    },
-    onLeave: () => {
-      console.log("onLeave");
-      var fadeOut = setInterval(function () {
-        if (SOUNDS.CHILD.volume > 0.1) {
-          SOUNDS.CHILD.volume -= 0.1;
-        } else {
-          clearInterval(fadeOut);
-          SOUNDS.CHILD.pause();
-        }
-      }, 100);
-    },
-    onEnterBack: () => {
-      console.log("onEnterBack");
-      playChild();
-    },
-  },
-});
+// gsap.to(".slide--314", {
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".s24",
+//     scrub: true,
+//     start: "top center",
+//     end: "bottom top",
+//     onEnter: () => {
+//       console.log("onEnter");
+//       playChild();
+//     },
+//     onLeaveBack: () => {
+//       console.log("onLeaveBack");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.CHILD.volume > 0.1) {
+//           SOUNDS.CHILD.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.CHILD.pause();
+//         }
+//       }, 100);
+//     },
+//     onLeave: () => {
+//       console.log("onLeave");
+//       var fadeOut = setInterval(function () {
+//         if (SOUNDS.CHILD.volume > 0.1) {
+//           SOUNDS.CHILD.volume -= 0.1;
+//         } else {
+//           clearInterval(fadeOut);
+//           SOUNDS.CHILD.pause();
+//         }
+//       }, 100);
+//     },
+//     onEnterBack: () => {
+//       console.log("onEnterBack");
+//       playChild();
+//     },
+//   },
+// });
 
 // intro 3
 
