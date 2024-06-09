@@ -107,7 +107,7 @@ gsap.to(".slide--312", {
     trigger: ".s22",
     scrub: true,
     start: "top center",
-    end: "center top",
+    end: "70% 0%",
     onEnter: () => {
       console.log("onEnter");
       playDanse();
@@ -1191,6 +1191,22 @@ gsap.to(
 
 gsap.from(
   ".slide--37 .col-txt",
+  {
+    scrollTrigger: {
+      trigger: ".s17",
+      start: "0% 50%",
+      end: "50% 60%",
+      scrub: true,
+    },
+    opacity: 0,
+    ease: "expo",
+  },
+  2
+);
+
+
+gsap.from(
+  ".slide--37 .poem_media",
   {
     scrollTrigger: {
       trigger: ".s17",
