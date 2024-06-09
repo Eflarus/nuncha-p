@@ -145,6 +145,20 @@ gsap.to(".slide--312", {
   },
 });
 
+gsap.to(".slide--313", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".s23",
+    scrub: true,
+    start: "top center",
+    end: "70% 0%",
+    onEnter: () => {
+      console.log("onEnter");
+      SOUNDS.DANCE.pause();
+    }
+  },
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   var soundButton = document.getElementById('sound_button_sm_dance');
   soundButton.addEventListener('click', function() {
@@ -339,6 +353,21 @@ gsap.to(".slide--37", {
       console.log("onEnterBack");
       playPoem();
     },
+  },
+});
+
+
+gsap.to(".slide--38", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".s18",
+    scrub: true,
+    start: "center center",
+    end: "70% 0%",
+    onEnter: () => {
+      console.log("onEnter");
+      SOUNDS.POEM.pause();
+    }
   },
 });
 
