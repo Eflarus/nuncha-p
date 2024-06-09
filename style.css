@@ -285,6 +285,25 @@ p {
   background-position: center;
 }
 
+.sound_restart{
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: solid var(--dark) 4px;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+}
+
+.sound_button.active_sound {
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/noted.svg") !important;
+  background-color: #760000 !important;
+}
+.sound_restart {
+  background-image: url("https://microcosm.pro/content/images/nuncha/img/restart.svg") !important;
+}
+
 #sound_button_sm1 {
   position: sticky;
   float: inline-end;
@@ -305,6 +324,14 @@ p {
   justify-content: left;
   align-items: center;
   max-width: 48vw;
+}
+
+.poem_media p{
+  margin: 0;
+  font-size: 24px;
+  line-height: 0.9;
+  font-weight: normal;
+  letter-spacing: 0;
 }
 
 .intro__img {
@@ -1132,10 +1159,21 @@ p {
   width: 0;
 }
 
-.slide--312 .sound_button {
+.slide--312 .sound_button,
+.slide--34 .sound_button,
+.slide--35 .sound_button,
+.slide--310 .sound_button,
+.slide--314 .sound_button,
+.poem_media {
   position: absolute;
   top: 20px;
   right: 10px;
+}
+
+.poem_media{
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .slide--51__content .s3_title {
@@ -1503,7 +1541,7 @@ p {
     font-size: 32px;
   }
 
-  .sound_button {
+  .sound_button, .sound_restart {
     height: 70px;
     width: 70px;
     border: solid var(--dark) 3px;
@@ -2196,6 +2234,7 @@ p {
 }
 
 @media (min-width: 768px) {
+
   .slide--36__img1{
     width: 1145px;
     margin: 0 auto;
@@ -2237,6 +2276,14 @@ p {
 }
 
 @media all and (max-width: 768px) {
+
+  .poem_media{
+    gap: 8px;
+  }
+
+  .poem_media p{
+    font-size: 12px !important;
+  }
 
   .slide--313__content img {
     width: 90vw;
@@ -2601,7 +2648,7 @@ p {
   .s3_text {
     font-size: 14px;
   }
-  .sound_button {
+  .sound_button, .sound_restart {
     height: 50px;
     width: 50px;
     background-size: 20px;

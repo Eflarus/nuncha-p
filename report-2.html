@@ -26,7 +26,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="colScroll" style="z-index: 100; visibility: hidden">
+      <div class="colScroll" style="z-index: 100; visibility: visible">
         <section class="s10 sr" id="project3">10</section>
         <section style="height: 300svh" class="s11 sc">11</section>
         <section style="height: 300svh" class="s12 sr">12</section>
@@ -106,7 +106,7 @@
                   <h2 class="intro__subtitle">вечная жизнь</h2>
                 </div>
                 <div class="intro_group">
-                  <div class="intro__btn-wrapper" onclick="toggleAudio()">
+                  <div class="intro__btn-wrapper" onclick="toggleAudio(); toggleSoundIcon()">
                     <div class="sound_button intro__btn"></div>
                     <p class="slide_text">включить аудио<br />сопровождение</p>
                   </div>
@@ -210,7 +210,12 @@
                     Нина, хочешь быть красивей меня?
                   </p>
                 </div>
+                <div
+                class="sound_button"
+                id="sound_button_sm_madonna"
+              ></div>
               </div>
+              
             </section>
 
             <section class="slide--35 s3" id="slide-35">
@@ -228,7 +233,12 @@
                   свой стакан до половины, а к нему<br />
                   уже потянулась новая рука…
                 </p>
+                <div
+                class="sound_button"
+                id="sound_button_sm_life"
+              ></div>
               </div>
+             
             </section>
 
             <section class="slide--36 s3" id="slide-36">
@@ -264,7 +274,7 @@
               </div>
             </section>
 
-            <section class="slide--37 s3" id="slide-37">
+            <section class="slide--37 s3" id="slide-37" style="position: relative;">
               <div class="slide--37__content slide--s3__content slide__content">
                 <img
                   class="slide--37__img1 slide--s3__img imgl"
@@ -288,7 +298,23 @@
                   class="slide--37__img2 slide--s3__img imgr"
                   src="https://microcosm.pro/content/images/nuncha/img/slide_37-2.jpg"
                 />
+
+                
               </div>
+              <div class="poem_media">
+                <p>
+                  Слушать стихотворение Иосифа Бродского<br /> в исполнении Аллы Сигаловой полностью
+                </p>
+                <div
+                class="sound_restart"
+                id="sound_button_sm_poem_restart"
+              ></div>
+              <div
+                class="sound_button"
+                id="sound_button_sm_poem"
+              ></div>
+              </div>
+              
             </section>
 
             <section class="slide--38 s3" id="slide-38">
@@ -340,7 +366,7 @@
               </div>
             </section>
 
-            <section class="slide--310 s3" id="slide-310">
+            <section class="slide--310 s3" id="slide-310" style="position: relative;">
               <div
                 class="slide--310__content slide--s3__content slide__content"
               >
@@ -392,7 +418,13 @@
                     </h3>
                   </div>
                 </div>
+               
               </div>
+              <div
+              class="sound_button"
+              id="sound_button_sm_heart"
+            ></div>
+              
             </section>
 
             <section class="slide--311 s3" id="slide-311">
@@ -421,8 +453,7 @@
               </div>
               <div
                 class="sound_button"
-                id="sound_button_sm"
-                onclick="toggleWPlayAudio()"
+                id="sound_button_sm_dance"
               ></div>
             </section>
 
@@ -482,7 +513,13 @@
                   />
                 </div>
                 <h2 class="s3_h2">дитя,&nbsp;не&nbsp;огорчайся</h2>
+
+                <div
+                class="sound_button"
+                id="sound_button_sm_child"
+              ></div>
               </div>
+              
             </section>
 
             <section class="slide--315 s3" id="slide-315">
@@ -534,6 +571,7 @@
                   играет ее прекрасное <br />
                   непобедимое тело
                 </p>
+
               </div>
             </section>
 

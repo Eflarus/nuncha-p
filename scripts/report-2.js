@@ -13,29 +13,38 @@ ScrollTrigger.defaults({
 
 const SOUNDS = {
   DANCE: new Audio("https://microcosm.pro/content/files/sounds/dance.mp3"),
-  SARASATE: new Audio(
-    "https://microcosm.pro/content/files/sounds/sarasate.mp3"
-  ),
+  LIFE: new Audio("https://microcosm.pro/content/files/sounds/nuncha_life.mp3"),
+  CHILD : new Audio("https://microcosm.pro/content/files/sounds/nuncha_child.mp3"),
+  HEART: new Audio("https://microcosm.pro/content/files/sounds/nuncha_heart.mp3"),
+  MADONNA: new Audio("https://microcosm.pro/content/files/sounds/nuncha_madonna.mp3"),
+  POEM: new Audio("https://microcosm.pro/content/files/sounds/nuncha_poem.mp3"),
 };
 
-SOUNDS.DANCE.muted = true;
-SOUNDS.SARASATE.muted = true;
+SOUNDS.DANCE.muted = SOUNDS.LIFE.muted = SOUNDS.CHILD.muted = SOUNDS.HEART.muted = SOUNDS.MADONNA.muted = SOUNDS.POEM.muted = true;
+
 
 const toggleAudio = () => {
-  SOUNDS.DANCE.muted = !SOUNDS.DANCE.muted;
-  console.log(SOUNDS.DANCE.muted);
-};
-const toggleAudio1 = () => {
-  SOUNDS.SARASATE.muted = !SOUNDS.SARASATE.muted;
-  console.log(SOUNDS.SARASATE.muted);
+  SOUNDS.DANCE.muted = SOUNDS.LIFE.muted = SOUNDS.CHILD.muted = SOUNDS.HEART.muted = SOUNDS.MADONNA.muted = SOUNDS.POEM.muted = !SOUNDS.DANCE.muted;
+  console.log(SOUNDS.DANCE.muted, SOUNDS.LIFE.muted, SOUNDS.CHILD.muted, SOUNDS.HEART.muted, SOUNDS.MADONNA.muted, SOUNDS.POEM.muted);
+
+  
 };
 
-const playSarasa = () => {
-  if (!SOUNDS.SARASATE.muted) {
-    SOUNDS.SARASATE.play();
-    SOUNDS.SARASATE.volume = 0.99;
+const toggleSoundIcon = (() => {
+  var soundButton = document.querySelectorAll('.sound_button');
+  for (var i = 0; i < soundButton.length; i++) {
+      const btn = soundButton[i]
+        console.log("toggleSoundIcon", i);
+          if (!btn.classList.contains('active_sound')) {
+              btn.classList.add('active_sound');
+                
+          } else {
+              btn.classList.remove('active_sound');
+          }
   }
-};
+  
+});
+
 
 const playDanse = () => {
   if (!SOUNDS.DANCE.muted) {
@@ -44,24 +53,54 @@ const playDanse = () => {
   }
 };
 
-const toggleWPlayAudio1 = () => {
-  toggleAudio1();
-  if (!SOUNDS.SARASATE.muted) {
-    SOUNDS.SARASATE.play();
-    SOUNDS.SARASATE.volume = 0.99;
+const playLife = () => {
+
+  if (!SOUNDS.LIFE.muted) {
+    SOUNDS.LIFE.play();
+    SOUNDS.LIFE.volume = 0.99;
   }
 };
 
-const toggleWPlayAudio = () => {
-  toggleAudio();
-  if (!SOUNDS.DANCE.muted) {
-    SOUNDS.DANCE.play();
-    SOUNDS.DANCE.volume = 0.99;
+const playChild = () => {
+
+  if (!SOUNDS.CHILD.muted) {
+    SOUNDS.CHILD.play();
+    SOUNDS.CHILD.volume = 0.99;
   }
 };
+
+const playHeart = () => {
+
+  if (!SOUNDS.HEART.muted) {
+    SOUNDS.HEART.play();
+    SOUNDS.HEART.volume = 0.99;
+  }
+};
+
+const playMadonna = () => {
+
+  if (!SOUNDS.MADONNA.muted) {
+    SOUNDS.MADONNA.play();
+    SOUNDS.MADONNA.volume = 0.99;
+  }
+};
+
+const playPoem = () => {
+
+  if (!SOUNDS.POEM.muted) {
+    SOUNDS.POEM.play();
+    SOUNDS.POEM.volume = 0.99;
+  }
+};
+
+
+
+
 
 let config = { strength: 0 };
 
+
+// S22 DANCE
 gsap.to(".slide--312", {
   ease: "none",
   scrollTrigger: {
@@ -98,6 +137,286 @@ gsap.to(".slide--312", {
     onEnterBack: () => {
       console.log("onEnterBack");
       playDanse();
+    },
+  },
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_dance');
+  soundButton.addEventListener('click', function() {
+      toggleAudio();
+      toggleSoundIcon();
+      playDanse();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_life');
+  soundButton.addEventListener('click', function() {
+      toggleAudio();
+      toggleSoundIcon();
+      playLife();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_heart');
+  soundButton.addEventListener('click', function() {
+      toggleAudio();
+      toggleSoundIcon();
+      playHeart();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_child');
+  soundButton.addEventListener('click', function() {
+      toggleAudio();
+      toggleSoundIcon();
+      playChild();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_madonna');
+  soundButton.addEventListener('click', function() {
+      toggleAudio();
+      toggleSoundIcon();
+      playMadonna();
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_poem');
+  soundButton.addEventListener('click', function() {
+      toggleAudio();
+      toggleSoundIcon();
+      playPoem();
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_poem_restart');
+  soundButton.addEventListener('click', function() {
+      restartPoem();
+  });
+});
+
+
+const restartPoem = () => {
+  SOUNDS.POEM.currentTime = 0;
+};
+
+
+
+
+
+// S14 MADONNA
+gsap.to(".slide--34", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".s14",
+    scrub: true,
+    start: "top center",
+    end: "center top",
+    onEnter: () => {
+      console.log("onEnter");
+      playMadonna();
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.MADONNA.volume > 0.1) {
+          SOUNDS.MADONNA.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.MADONNA.pause();
+        }
+      }, 100);
+    },
+    onLeave: () => {
+      console.log("onLeave");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.MADONNA.volume > 0.1) {
+          SOUNDS.MADONNA.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.MADONNA.pause();
+        }
+      }, 100);
+    },
+    onEnterBack: () => {
+      console.log("onEnterBack");
+      playMadonna();
+    },
+  },
+});
+
+
+// S15 LIFE
+gsap.to(".slide--35", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".s15",
+    scrub: true,
+    start: "top center",
+    end: "bottom top",
+    onEnter: () => {
+      console.log("onEnter");
+      playLife();
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.LIFE.volume > 0.1) {
+          SOUNDS.LIFE.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.LIFE.pause();
+        }
+      }, 100);
+    },
+    onLeave: () => {
+      console.log("onLeave");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.LIFE.volume > 0.1) {
+          SOUNDS.LIFE.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.LIFE.pause();
+        }
+      }, 100);
+    },
+    onEnterBack: () => {
+      console.log("onEnterBack");
+      playLife();
+    },
+  },
+});
+
+
+// S17 POEM
+gsap.to(".slide--37", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".s17",
+    scrub: true,
+    start: "top center",
+    end: "bottom top",
+    onEnter: () => {
+      console.log("onEnter");
+      playPoem();
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.POEM.volume > 0.1) {
+          SOUNDS.POEM.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.POEM.pause();
+        }
+      }, 100);
+    },
+    onLeave: () => {
+      console.log("onLeave");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.POEM.volume > 0.1) {
+          SOUNDS.POEM.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.POEM.pause();
+        }
+      }, 100);
+    },
+    onEnterBack: () => {
+      console.log("onEnterBack");
+      playPoem();
+    },
+  },
+});
+
+// S20 HEART
+gsap.to(".slide--310", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".s20",
+    scrub: true,
+    start: "top center",
+    end: "bottom top",
+    onEnter: () => {
+      console.log("onEnter");
+      playHeart();
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.HEART.volume > 0.1) {
+          SOUNDS.HEART.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.HEART.pause();
+        }
+      }, 100);
+    },
+    onLeave: () => {
+      console.log("onLeave");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.HEART.volume > 0.1) {
+          SOUNDS.HEART.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.HEART.pause();
+        }
+      }, 100);
+    },
+    onEnterBack: () => {
+      console.log("onEnterBack");
+      playHeart();
+    },
+  },
+});
+
+
+// S24 CHILD
+gsap.to(".slide--314", {
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".s24",
+    scrub: true,
+    start: "top center",
+    end: "bottom top",
+    onEnter: () => {
+      console.log("onEnter");
+      playChild();
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.CHILD.volume > 0.1) {
+          SOUNDS.CHILD.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.CHILD.pause();
+        }
+      }, 100);
+    },
+    onLeave: () => {
+      console.log("onLeave");
+      var fadeOut = setInterval(function () {
+        if (SOUNDS.CHILD.volume > 0.1) {
+          SOUNDS.CHILD.volume -= 0.1;
+        } else {
+          clearInterval(fadeOut);
+          SOUNDS.CHILD.pause();
+        }
+      }, 100);
+    },
+    onEnterBack: () => {
+      console.log("onEnterBack");
+      playChild();
     },
   },
 });
