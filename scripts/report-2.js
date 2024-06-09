@@ -111,9 +111,11 @@ gsap.to(".slide--312", {
     onEnter: () => {
       console.log("onEnter");
       playDanse();
+      SOUNDS.POEM.pause();
     },
     onLeaveBack: () => {
       console.log("onLeaveBack");
+      SOUNDS.POEM.pause();
       var fadeOut = setInterval(function () {
         if (SOUNDS.DANCE.volume > 0.1) {
           SOUNDS.DANCE.volume -= 0.1;
@@ -125,6 +127,7 @@ gsap.to(".slide--312", {
     },
     onLeave: () => {
       console.log("onLeave");
+      SOUNDS.POEM.pause();
       var fadeOut = setInterval(function () {
         if (SOUNDS.DANCE.volume > 0.1) {
           SOUNDS.DANCE.volume -= 0.1;
@@ -137,6 +140,7 @@ gsap.to(".slide--312", {
     onEnterBack: () => {
       console.log("onEnterBack");
       playDanse();
+      SOUNDS.POEM.pause();
     },
   },
 });
