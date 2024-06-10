@@ -155,7 +155,20 @@ gsap.to(".slide--313", {
     onEnter: () => {
       console.log("onEnter");
       SOUNDS.DANCE.pause();
-    }
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      SOUNDS.DANCE.pause();
+    },
+    onLeave: () => {
+      console.log("onLeave");
+      SOUNDS.DANCE.pause();
+    },
+    onEnterBack: () => {
+      console.log("onEnterBack");
+      SOUNDS.DANCE.pause();
+    },
+
   },
 });
 
@@ -168,41 +181,41 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var soundButton = document.getElementById('sound_button_sm_life');
-  soundButton.addEventListener('click', function() {
-      toggleAudio();
-      toggleSoundIcon();
-      playLife();
-  });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   var soundButton = document.getElementById('sound_button_sm_life');
+//   soundButton.addEventListener('click', function() {
+//       toggleAudio();
+//       toggleSoundIcon();
+//       playLife();
+//   });
+// });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var soundButton = document.getElementById('sound_button_sm_heart');
-  soundButton.addEventListener('click', function() {
-      toggleAudio();
-      toggleSoundIcon();
-      playHeart();
-  });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   var soundButton = document.getElementById('sound_button_sm_heart');
+//   soundButton.addEventListener('click', function() {
+//       toggleAudio();
+//       toggleSoundIcon();
+//       playHeart();
+//   });
+// });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var soundButton = document.getElementById('sound_button_sm_child');
-  soundButton.addEventListener('click', function() {
-      toggleAudio();
-      toggleSoundIcon();
-      playChild();
-  });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   var soundButton = document.getElementById('sound_button_sm_child');
+//   soundButton.addEventListener('click', function() {
+//       toggleAudio();
+//       toggleSoundIcon();
+//       playChild();
+//   });
+// });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var soundButton = document.getElementById('sound_button_sm_madonna');
-  soundButton.addEventListener('click', function() {
-      toggleAudio();
-      toggleSoundIcon();
-      playMadonna();
-  });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   var soundButton = document.getElementById('sound_button_sm_madonna');
+//   soundButton.addEventListener('click', function() {
+//       toggleAudio();
+//       toggleSoundIcon();
+//       playMadonna();
+//   });
+// });
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -214,22 +227,50 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//   var soundButton = document.getElementById('sound_button_sm_poem_restart');
+//   soundButton.addEventListener('click', function() {
+//     restartPoem();
+//   });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var soundButton = document.getElementById('sound_button_sm_poem_restart');
-  soundButton.addEventListener('click', function() {
-      restartPoem();
-  });
-});
+//   var audioElement = SOUNDS.POEM;
+//   audioElement.addEventListener('timeupdate', function() {
+//     const percentage = audioElement.currentTime / audioElement.duration;
+//     updateProgress(percentage);
+//   });
+// });
+
+
 
 
 const restartPoem = () => {
   SOUNDS.POEM.currentTime = 0;
+  updateProgress(0);
 };
 
 
+const updateProgress = (percentage) => {
+  const progressCircle = document.getElementById('progress-circle');
+  const progressCircleSm = document.getElementById('progress-circle-sm');
 
+  const dashOffset = 201.06 - (201.06 * percentage);
+  const dashOffsetSm = 150.7 - (150.7 * percentage);
+  progressCircle.style.strokeDashoffset = dashOffset;
+  progressCircleSm.style.strokeDashoffset = dashOffsetSm;
+};
 
+document.addEventListener('DOMContentLoaded', function() {
+  var soundButton = document.getElementById('sound_button_sm_poem_restart');
+  soundButton.addEventListener('click', function() {
+    restartPoem();
+  });
+
+  var audioElement = SOUNDS.POEM;
+  audioElement.addEventListener('timeupdate', function() {
+    const percentage = audioElement.currentTime / audioElement.duration;
+    updateProgress(percentage);
+  });
+});
 
 // S14 MADONNA
 // gsap.to(".slide--34", {
@@ -367,7 +408,19 @@ gsap.to(".slide--38", {
     onEnter: () => {
       console.log("onEnter");
       SOUNDS.POEM.pause();
-    }
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      SOUNDS.POEM.pause();
+    },
+    onLeave: () => {
+      console.log("onLeave");
+      SOUNDS.POEM.pause();
+    },
+    onEnterBack: () => {
+      console.log("onEnterBack");
+      SOUNDS.POEM.pause();
+    },
   },
 });
 

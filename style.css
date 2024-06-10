@@ -52,6 +52,25 @@ body {
   overflow-x: hidden;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  /* change if the mask should have another color then white */
+  z-index: 999;
+  /* makes sure it stays on top */
+}
+
+#preloader img {
+  width: 200px;
+  margin-top: calc(50vh - 100px);
+  margin-left: calc(50vw - 100px);
+  object-fit: contain;
+}
+
 .ovh {
   overflow: hidden;
 }
@@ -285,7 +304,7 @@ p {
   background-position: center;
 }
 
-.sound_restart{
+.sound_restart {
   display: block;
   height: 70px;
   width: 70px;
@@ -294,7 +313,23 @@ p {
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
+  position: relative;
 }
+
+#progress-circle {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 201.06; /* 2 * PI * 32 (радиус круга) */
+  stroke-dashoffset: 201.06;
+}
+
+#progress-circle-sm {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 150.7; /* 2 * PI * 24 (радиус круга) */
+  stroke-dashoffset: 150.7;
+}
+
 
 .sound_button.active_sound {
   background-image: url("https://microcosm.pro/content/images/nuncha/img/noted.svg") !important;
@@ -960,6 +995,7 @@ p {
 .slide--37__content {
   flex-direction: row;
   height: 80vh;
+  margin-top: 14vh !important;
 }
 .slide--37 {
   justify-content: center;

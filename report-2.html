@@ -25,8 +25,42 @@
     </script>
   </head>
   <body>
+    <!-- Preloader -->
+    <div>
+      <div id="preloader">
+        <img
+          src="https://microcosm.pro/content/images/nuncha/img/nuncha-min3.gif"
+          alt=""
+        />
+      </div>
+      <script>
+        window.addEventListener("load", function () {
+          var preloaderElement = document.getElementById("preloader");
+          var bodyElement = document.body;
+
+          // Fade out the loading animation gradually
+          setTimeout(function () {
+            preloaderElement.style.transition = "opacity 1s";
+            preloaderElement.style.opacity = 0; // Set opacity to 0 gradually
+          }, 500); // Adjust delay if needed
+
+          // Remove the preloader after the fade-out effect
+          setTimeout(function () {
+            preloaderElement.parentNode.removeChild(preloaderElement);
+          }, 1500); // Adjust timing if needed
+
+          // Set body overflow to visible after a delay
+          setTimeout(function () {
+            bodyElement.style.overflow = "visible";
+          }, 2000); // Adjust timing if needed
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {});
+      </script>
+    </div>
+
     <div class="container">
-      <div class="colScroll" style="z-index: 100; visibility: hidden;">
+      <div class="colScroll" style="z-index: 100; visibility: hidden">
         <section class="s10 sr" id="project3">10</section>
         <section style="height: 300svh" class="s11 sc">11</section>
         <section style="height: 300svh" class="s12 sr">12</section>
@@ -106,7 +140,10 @@
                   <h2 class="intro__subtitle">вечная жизнь</h2>
                 </div>
                 <div class="intro_group">
-                  <div class="intro__btn-wrapper" onclick="toggleAudio(); toggleSoundIcon()">
+                  <div
+                    class="intro__btn-wrapper"
+                    onclick="toggleAudio(); toggleSoundIcon()"
+                  >
                     <div class="sound_button intro__btn"></div>
                     <p class="slide_text">включить аудио<br />сопровождение</p>
                   </div>
@@ -215,7 +252,6 @@
                 id="sound_button_sm_madonna"
               ></div> -->
               </div>
-              
             </section>
 
             <section class="slide--35 s3" id="slide-35">
@@ -238,13 +274,12 @@
                 id="sound_button_sm_life"
               ></div> -->
               </div>
-             
             </section>
 
             <section class="slide--36 s3" id="slide-36">
               <div class="slide--36__content slide--s3__content slide__content">
                 <div class="pair-txt">
-                  <p class="s3_text mdh" style="transform-origin: right top;">
+                  <p class="s3_text mdh" style="transform-origin: right top">
                     Cначала не заметно было и<br />
                     тени соперничества между<br />
                     матерью и Ниной, — дочь вела<br />
@@ -256,16 +291,16 @@
                   src="https://microcosm.pro/content/images/nuncha/img/slide_36-1.jpg"
                 />
                 <div class="pair-txt">
-                  <p class="s3_text smh" style="transform-origin: left top;">
+                  <p class="s3_text smh" style="transform-origin: left top">
                     Cначала не заметно было и тени<br />
                     соперничества между матерью и Ниной,&nbsp;—<br />
                     дочь вела себя скромно, бережно
                   </p>
-                  <p class="s3_text smh" style="transform-origin: left top;">
+                  <p class="s3_text smh" style="transform-origin: left top">
                     А глаза матери горели всё жадней,<br />
                     и всё призывней звучал её голос
                   </p>
-                  <p class="s3_text mdh" style="transform-origin: left top;">
+                  <p class="s3_text mdh" style="transform-origin: left top">
                     А глаза матери горели всё<br />
                     жадней, и всё призывней <br />
                     звучал её голос
@@ -274,7 +309,11 @@
               </div>
             </section>
 
-            <section class="slide--37 s3" id="slide-37" style="position: relative;">
+            <section
+              class="slide--37 s3"
+              id="slide-37"
+              style="position: relative"
+            >
               <div class="slide--37__content slide--s3__content slide__content">
                 <img
                   class="slide--37__img1 slide--s3__img imgl"
@@ -298,23 +337,38 @@
                   class="slide--37__img2 slide--s3__img imgr"
                   src="https://microcosm.pro/content/images/nuncha/img/slide_37-2.jpg"
                 />
-
-                
               </div>
               <div class="poem_media">
                 <p>
-                  Прослушать стихотворение Бродского<br /> в исполнении Аллы Сигаловой
+                  Прослушать стихотворение Бродского<br />
+                  в исполнении Аллы Сигаловой
                 </p>
-                <div
-                class="sound_restart"
-                id="sound_button_sm_poem_restart"
-              ></div>
-              <div
-                class="sound_button"
-                id="sound_button_sm_poem"
-              ></div>
+                <div class="sound_restart" id="sound_button_sm_poem_restart">
+                  <svg width="64" height="64" viewBox="0 0 64 64" class="smh">
+                    <circle
+                      cx="32"
+                      cy="32"
+                      r="32"
+                      stroke="var(--dark)"
+                      stroke-width="5"
+                      fill="none"
+                      id="progress-circle"
+                    ></circle>
+                  </svg>
+                  <svg width="48" height="48" viewBox="0 0 48 48" class="mdh">
+                    <circle
+                      cx="25"
+                      cy="23"
+                      r="22"
+                      stroke="var(--dark)"
+                      stroke-width="4"
+                      fill="none"
+                      id="progress-circle-sm"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="sound_button" id="sound_button_sm_poem"></div>
               </div>
-              
             </section>
 
             <section class="slide--38 s3" id="slide-38">
@@ -366,7 +420,11 @@
               </div>
             </section>
 
-            <section class="slide--310 s3" id="slide-310" style="position: relative;">
+            <section
+              class="slide--310 s3"
+              id="slide-310"
+              style="position: relative"
+            >
               <div
                 class="slide--310__content slide--s3__content slide__content"
               >
@@ -418,13 +476,11 @@
                     </h3>
                   </div>
                 </div>
-               
               </div>
               <!-- <div
               class="sound_button"
               id="sound_button_sm_heart"
             ></div> -->
-              
             </section>
 
             <section class="slide--311 s3" id="slide-311">
@@ -451,10 +507,7 @@
                   src="https://microcosm.pro/content/images/nuncha/img/nw00.svg"
                 />
               </div>
-              <div
-                class="sound_button"
-                id="sound_button_sm_dance"
-              ></div>
+              <div class="sound_button" id="sound_button_sm_dance"></div>
             </section>
 
             <section class="slide--3131 s3" id="slide-3131">
@@ -519,7 +572,6 @@
                 id="sound_button_sm_child"
               ></div> -->
               </div>
-              
             </section>
 
             <section class="slide--315 s3" id="slide-315">
@@ -571,7 +623,6 @@
                   играет ее прекрасное <br />
                   непобедимое тело
                 </p>
-
               </div>
             </section>
 
