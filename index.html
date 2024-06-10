@@ -22,6 +22,39 @@
     </script>
   </head>
   <body>
+     <!-- Preloader -->
+     <div>
+      <div id="preloader">
+        <img
+          src="https://microcosm.pro/content/images/nuncha/img/nuncha-min3.gif"
+          alt=""
+        />
+      </div>
+      <script>
+        window.addEventListener("load", function () {
+          var preloaderElement = document.getElementById("preloader");
+          var bodyElement = document.body;
+
+          // Fade out the loading animation gradually
+          setTimeout(function () {
+            preloaderElement.style.transition = "opacity 1s";
+            preloaderElement.style.opacity = 0; // Set opacity to 0 gradually
+          }, 500); // Adjust delay if needed
+
+          // Remove the preloader after the fade-out effect
+          setTimeout(function () {
+            preloaderElement.parentNode.removeChild(preloaderElement);
+          }, 1500); // Adjust timing if needed
+
+          // Set body overflow to visible after a delay
+          setTimeout(function () {
+            bodyElement.style.overflow = "visible";
+          }, 2000); // Adjust timing if needed
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {});
+      </script>
+    </div>
     <div id="root" class="container">
       <div class="colScroll" style="z-index: 100; visibility: hidden">
         <section class="s01 sc" style="height: 200vh">1</section>
